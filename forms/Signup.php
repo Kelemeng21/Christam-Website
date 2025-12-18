@@ -12,6 +12,13 @@
       height: auto;
       margin: 0 auto;
     }
+
+    .div img{
+        max-height: 70px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
   </style>
   <title>Christmas Sign In</title>
 </head>
@@ -71,6 +78,10 @@
       </p>
     </div>
   </div>
+
+  <div class="div" >
+    <a href="https://github.com/Kelemeng21/Christam-Website"><img src="../src/GitHub_Logo.png" alt=""></a>
+    </div>
 
 </body>
 </html>

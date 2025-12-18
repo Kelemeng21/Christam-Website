@@ -88,37 +88,37 @@
         <!-- Sidebar Links -->
         <ul class="flex flex-col mt-8 gap-4 px-6">
             <li>
-                <a href="../../home/main.php" class="flex items-center gap-3 p-4 rounded-xl text-yellow-400 hover:text-green-900 hover:bg-yellow-400 transition shadow hover:shadow-lg">
+                <a href="main.php" class="flex items-center gap-3 p-4 rounded-xl text-yellow-400 hover:text-green-900 hover:bg-yellow-400 transition shadow hover:shadow-lg">
                     <span>🏠</span> Főoldal
                 </a>
             </li>
             <li>
-                <a href="../../home/main.php#about" class="flex items-center gap-3 p-4 rounded-xl text-yellow-400 hover:text-green-900 hover:bg-yellow-400 transition shadow hover:shadow-lg">
+                <a href="main.php#about" class="flex items-center gap-3 p-4 rounded-xl text-yellow-400 hover:text-green-900 hover:bg-yellow-400 transition shadow hover:shadow-lg">
                     <span>ℹ️</span> Rólunk
                 </a>
             </li>
             <li>
-                <a href="#" class="flex items-center gap-3 p-4 rounded-xl text-yellow-400 hover:text-green-900 hover:bg-yellow-400 transition shadow hover:shadow-lg">
+                <a href="../galeria/gal.php" class="flex items-center gap-3 p-4 rounded-xl text-yellow-400 hover:text-green-900 hover:bg-yellow-400 transition shadow hover:shadow-lg">
                     <span>🖼️</span> Galéria
                 </a>
             </li>
             <li>
-                <a href="../../contact us/contactus.php" class="flex items-center gap-3 p-4 rounded-xl text-yellow-400 hover:text-green-900 hover:bg-yellow-400 transition shadow hover:shadow-lg">
+                <a href="../contact us/contactus.php" class="flex items-center gap-3 p-4 rounded-xl text-yellow-400 hover:text-green-900 hover:bg-yellow-400 transition shadow hover:shadow-lg">
                     <span>📞</span> Kapcsolat
                 </a>
             </li>
             <li>
-                <a id="login" href="../../galeria/gal.php" class="flex items-center gap-3 p-4 rounded-xl text-white bg-red-600 hover:bg-red-500 font-semibold shadow hover:shadow-lg transition">
+                <a id="login" href="../forms/Login.php" class="flex items-center gap-3 p-4 rounded-xl text-white bg-red-600 hover:bg-red-500 font-semibold shadow hover:shadow-lg transition">
                     <span>🔑</span> Bejelentkezés
                 </a>
             </li>
             <li>
-                <a id="signup" href="#contact" class="flex items-center gap-3 p-4 rounded-xl text-green-900 bg-yellow-400 hover:bg-yellow-300 font-semibold shadow hover:shadow-lg transition">
+                <a id="signup" href="../forms/Signup.php" class="flex items-center gap-3 p-4 rounded-xl text-green-900 bg-yellow-400 hover:bg-yellow-300 font-semibold shadow hover:shadow-lg transition">
                     <span>📝</span> Regisztráció
                 </a>
             </li>
             <li>
-                <a href="#shop" class="flex items-center gap-3 p-4 rounded-xl text-green-900 bg-gradient-to-r from-yellow-400 to-yellow-300 hover:from-yellow-300 hover:to-yellow-400 font-semibold shadow hover:shadow-xl transition">
+                <a href="../webshop/shop.php" class="flex items-center gap-3 p-4 rounded-xl text-green-900 bg-gradient-to-r from-yellow-400 to-yellow-300 hover:from-yellow-300 hover:to-yellow-400 font-semibold shadow hover:shadow-xl transition">
                     <span>🎁</span> Ajándékbolt
                 </a>
                 <br>

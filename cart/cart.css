@@ -1,0 +1,143 @@
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, #1a472a 0%, #0d2818 100%);
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.2);
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d4af37;
+    border-radius: 8px;
+    border: 2px solid rgba(0,0,0,0.2);
+}
+
+/* Cart Section */
+.cart-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cart cards */
+.cart-card {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(212,175,55,0.3);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: 0.3s;
+}
+
+.cart-card:hover {
+    background: rgba(212,175,55,0.15);
+    transform: translateY(-3px);
+}
+
+/* Product info */
+.cart-card a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cart-card a:hover {
+    color: #d4af37;
+}
+
+/* Price */
+.cart-price {
+    color: #fde047;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: right;
+}
+
+/* Buttons */
+.cart-btn {
+    background: linear-gradient(135deg, #d4af37 0%, #c4941f 100%);
+    color: #0d2818;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cart-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(212,175,55,0.6);
+}
+
+/* Order summary */
+.order-summary {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(212,175,55,0.3);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.order-summary h3 {
+    color: #d4af37;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.order-summary p,
+.order-summary dd {
+    color: #fff;
+}
+
+/* Input styling */
+.cart-input {
+    background: rgba(255,255,255,0.05);
+    color: #fff;
+    border: 1px solid rgba(212,175,55,0.3);
+    border-radius: 6px;
+    padding: 0.5rem;
+    width: 60px;
+    text-align: center;
+}
+
+.cart-input:focus {
+    outline: 2px solid #d4af37;
+}
+
+/* Tooltip */
+.tooltip {
+    background: #0d2818;
+    color: #d4af37;
+    padding: 0.3rem 0.5rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cart-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cart-price {
+        text-align: center;
+    }
+}

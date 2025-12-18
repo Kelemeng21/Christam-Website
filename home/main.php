@@ -20,28 +20,28 @@
 <body class="bg-[#0d2818] text-white">
 
 
-<div id="preloader" class="fixed inset-0 bg-black/70 flex flex-col items-center justify-center z-50">
-    <!-- Spinning Ornament -->
-    <div class="relative w-24 h-24 mb-6">
-        <div class="w-24 h-24 rounded-full bg-red-600 border-4 border-yellow-400 animate-spin-slow shadow-lg flex items-center justify-center">
-            <div class="w-4 h-4 bg-white rounded-full"></div>
+    <div id="preloader" class="fixed inset-0 bg-black/70 flex flex-col items-center justify-center z-50">
+        <!-- Spinning Ornament -->
+        <div class="relative w-24 h-24 mb-6">
+            <div class="w-24 h-24 rounded-full bg-red-600 border-4 border-yellow-400 animate-spin-slow shadow-lg flex items-center justify-center">
+                <div class="w-4 h-4 bg-white rounded-full"></div>
+            </div>
+            <!-- Ornament Top -->
+            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-2 bg-yellow-400 rounded-t-full"></div>
         </div>
-        <!-- Ornament Top -->
-        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-2 bg-yellow-400 rounded-t-full"></div>
-    </div>
 
-    <!-- Loading Text -->
-    <p class="text-yellow-400 text-lg font-semibold animate-pulse">Kellemes Ünnepeket!</p>
+        <!-- Loading Text -->
+        <p class="text-yellow-400 text-lg font-semibold animate-pulse">Kellemes Ünnepeket!</p>
 
-    <!-- Falling Snow -->
-    <div class="absolute inset-0 pointer-events-none">
-        <div class="snowflake text-white text-xl absolute animate-fall" style="left: 10%; animation-delay: 0s;">❄</div>
-        <div class="snowflake text-white text-2xl absolute animate-fall" style="left: 30%; animation-delay: 1s;">❄</div>
-        <div class="snowflake text-white text-xl absolute animate-fall" style="left: 50%; animation-delay: 0.5s;">❄</div>
-        <div class="snowflake text-white text-2xl absolute animate-fall" style="left: 70%; animation-delay: 1.5s;">❄</div>
-        <div class="snowflake text-white text-xl absolute animate-fall" style="left: 90%; animation-delay: 0.2s;">❄</div>
+        <!-- Falling Snow -->
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="snowflake text-white text-xl absolute animate-fall" style="left: 10%; animation-delay: 0s;">❄</div>
+            <div class="snowflake text-white text-2xl absolute animate-fall" style="left: 30%; animation-delay: 1s;">❄</div>
+            <div class="snowflake text-white text-xl absolute animate-fall" style="left: 50%; animation-delay: 0.5s;">❄</div>
+            <div class="snowflake text-white text-2xl absolute animate-fall" style="left: 70%; animation-delay: 1.5s;">❄</div>
+            <div class="snowflake text-white text-xl absolute animate-fall" style="left: 90%; animation-delay: 0.2s;">❄</div>
+        </div>
     </div>
-</div>
 
     <!-- Header -->
     <header>
@@ -53,11 +53,18 @@
             <ul class="nav-links flex gap-6 items-center">
                 <li><a href="../../home/main.php">Főoldal</a></li>
                 <li><a href="../../home/main.php#about">Rólunk</a></li>
-                <li><a href="#" class="active">Galéria</a></li>
+                <li><a href="../galeria/gal.php" class="active">Galéria</a></li>
                 <li><a href="../../contact us/contactus.php">Kapcsolat</a></li>
-                <li><a id="login" href="../../galeria/gal.php" class="px-4 py-2 rounded-full bg-red-600">Bejelentkezés</a></li>
-                <li><a id="signup" href="#contact" class="px-4 py-2 rounded-full bg-green-500">Regisztráció</a></li>
+                <li><a id="login" href="../forms/Login.php" class="px-4 py-2 rounded-full bg-red-600">Bejelentkezés</a></li>
+                <li><a id="signup" href="../forms/Signup.php" class="px-4 py-2 rounded-full bg-green-500">Regisztráció</a></li>
                 <li><a href="#shop" class="nav-cta px-6 py-2 rounded-full font-bold">Ajándékbolt</a></li>
+                <li>
+                    <a href="../cart/cart.php" class="flex items-center justify-center gap-3 text-white px-6 py-3 font-bold text-lgtransition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.5 7h13L17 13M7 13l-2-8m0 0H3m4 0h13.6" />
+                        </svg>
+                    </a>
+                </li>
             </ul>
             <div class="mobile-menu flex flex-col gap-1 cursor-pointer">
                 <span class="w-6 h-0.5 bg-yellow-400 rounded"></span>
@@ -69,59 +76,60 @@
 
     <div id="sidebar" class="fixed top-0 right-0 w-80 h-full bg-gradient-to-b from-green-900 via-green-800 to-green-950 shadow-2xl transform translate-x-full transition-transform duration-300 z-50 overflow-y-auto">
 
-<!-- Header -->
-<div class="p-8 flex justify-between items-center border-b border-green-700">
-    <div class="flex items-center gap-3">
-        <span class="text-3xl">🎄</span>
-        <span class="text-2xl font-bold text-yellow-400 tracking-wide">Karácsony</span>
+        <!-- Header -->
+        <div class="p-8 flex justify-between items-center border-b border-green-700">
+            <div class="flex items-center gap-3">
+                <span class="text-3xl">🎄</span>
+                <span class="text-2xl font-bold text-yellow-400 tracking-wide">Karácsony</span>
+            </div>
+            <button id="close-sidebar" class="w-12 h-12 flex items-center justify-center rounded-full bg-yellow-400 text-green-900 font-bold text-3xl hover:bg-yellow-300 transition shadow-md hover:shadow-lg">&times;</button>
+        </div>
+
+        <!-- Sidebar Links -->
+        <ul class="flex flex-col mt-8 gap-4 px-6">
+            <li>
+                <a href="../../home/main.php" class="flex items-center gap-3 p-4 rounded-xl text-yellow-400 hover:text-green-900 hover:bg-yellow-400 transition shadow hover:shadow-lg">
+                    <span>🏠</span> Főoldal
+                </a>
+            </li>
+            <li>
+                <a href="../../home/main.php#about" class="flex items-center gap-3 p-4 rounded-xl text-yellow-400 hover:text-green-900 hover:bg-yellow-400 transition shadow hover:shadow-lg">
+                    <span>ℹ️</span> Rólunk
+                </a>
+            </li>
+            <li>
+                <a href="#" class="flex items-center gap-3 p-4 rounded-xl text-yellow-400 hover:text-green-900 hover:bg-yellow-400 transition shadow hover:shadow-lg">
+                    <span>🖼️</span> Galéria
+                </a>
+            </li>
+            <li>
+                <a href="../../contact us/contactus.php" class="flex items-center gap-3 p-4 rounded-xl text-yellow-400 hover:text-green-900 hover:bg-yellow-400 transition shadow hover:shadow-lg">
+                    <span>📞</span> Kapcsolat
+                </a>
+            </li>
+            <li>
+                <a id="login" href="../../galeria/gal.php" class="flex items-center gap-3 p-4 rounded-xl text-white bg-red-600 hover:bg-red-500 font-semibold shadow hover:shadow-lg transition">
+                    <span>🔑</span> Bejelentkezés
+                </a>
+            </li>
+            <li>
+                <a id="signup" href="#contact" class="flex items-center gap-3 p-4 rounded-xl text-green-900 bg-yellow-400 hover:bg-yellow-300 font-semibold shadow hover:shadow-lg transition">
+                    <span>📝</span> Regisztráció
+                </a>
+            </li>
+            <li>
+                <a href="#shop" class="flex items-center gap-3 p-4 rounded-xl text-green-900 bg-gradient-to-r from-yellow-400 to-yellow-300 hover:from-yellow-300 hover:to-yellow-400 font-semibold shadow hover:shadow-xl transition">
+                    <span>🎁</span> Ajándékbolt
+                </a>
+                <br>
+            </li>
+        </ul>
+
+        <!-- Decorative Footer -->
+        <div class="mt-auto p-8 border-t border-green-700 text-center text-green-200 text-sm">
+            🎅 Boldog Ünnepeket! <br> &copy; 2026 Karácsony
+        </div>
     </div>
-    <button id="close-sidebar" class="w-12 h-12 flex items-center justify-center rounded-full bg-yellow-400 text-green-900 font-bold text-3xl hover:bg-yellow-300 transition shadow-md hover:shadow-lg">&times;</button>
-</div>
-
-<!-- Sidebar Links -->
-<ul class="flex flex-col mt-8 gap-4 px-6">
-    <li>
-        <a href="../../home/main.php" class="flex items-center gap-3 p-4 rounded-xl text-yellow-400 hover:text-green-900 hover:bg-yellow-400 transition shadow hover:shadow-lg">
-            <span>🏠</span> Főoldal
-        </a>
-    </li>
-    <li>
-        <a href="../../home/main.php#about" class="flex items-center gap-3 p-4 rounded-xl text-yellow-400 hover:text-green-900 hover:bg-yellow-400 transition shadow hover:shadow-lg">
-            <span>ℹ️</span> Rólunk
-        </a>
-    </li>
-    <li>
-        <a href="#" class="flex items-center gap-3 p-4 rounded-xl text-yellow-400 hover:text-green-900 hover:bg-yellow-400 transition shadow hover:shadow-lg">
-            <span>🖼️</span> Galéria
-        </a>
-    </li>
-    <li>
-        <a href="../../contact us/contactus.php" class="flex items-center gap-3 p-4 rounded-xl text-yellow-400 hover:text-green-900 hover:bg-yellow-400 transition shadow hover:shadow-lg">
-            <span>📞</span> Kapcsolat
-        </a>
-    </li>
-    <li>
-        <a id="login" href="../../galeria/gal.php" class="flex items-center gap-3 p-4 rounded-xl text-white bg-red-600 hover:bg-red-500 font-semibold shadow hover:shadow-lg transition">
-            <span>🔑</span> Bejelentkezés
-        </a>
-    </li>
-    <li>
-        <a id="signup" href="#contact" class="flex items-center gap-3 p-4 rounded-xl text-green-900 bg-yellow-400 hover:bg-yellow-300 font-semibold shadow hover:shadow-lg transition">
-            <span>📝</span> Regisztráció
-        </a>
-    </li>
-    <li>
-        <a href="#shop" class="flex items-center gap-3 p-4 rounded-xl text-green-900 bg-gradient-to-r from-yellow-400 to-yellow-300 hover:from-yellow-300 hover:to-yellow-400 font-semibold shadow hover:shadow-xl transition">
-            <span>🎁</span> Ajándékbolt
-        </a>
-    </li>
-</ul>
-
-<!-- Decorative Footer -->
-<div class="mt-auto p-8 border-t border-green-700 text-center text-green-200 text-sm">
-    🎅 Boldog Ünnepeket! <br> &copy; 2024 Karácsony
-</div>
-</div>
 
     <!-- Hero Section -->
     <section class="hero bg-green-900/80 text-center py-24 px-6">
@@ -133,7 +141,7 @@
     </section>
 
     <!-- Features Section -->
-    <section class="bg-gradient-to-b from-[#1a472a] via-[#0d2818] to-[#1a472a] py-24 sm:py-32">
+    <section class="bg-gradient-to-b from-[#1a472a] via-[#0d2818] to-[#1a472a] py-24 sm:py-32" id="about">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-2xl lg:text-center">
                 <h2 class="text-base/7 font-semibold text-[#d4af37]">Gyors Telepítés</h2>
@@ -345,13 +353,13 @@
                 $result = $conn->query($sql);
 
                 if ($result->num_rows > 0) {
-                    while($row = $result->fetch_assoc()) {
+                    while ($row = $result->fetch_assoc()) {
                         echo '
                         <div class="bg-green-800 p-6 rounded-2xl shadow-xl">
-                            <h3 class="text-xl font-bold text-yellow-400">'. $row["name"] .'</h3>
-                            <p class="text-white/80 mt-2">'. $row["description"] .'</p>
+                            <h3 class="text-xl font-bold text-yellow-400">' . $row["name"] . '</h3>
+                            <p class="text-white/80 mt-2">' . $row["description"] . '</p>
                             <div class="mt-4 flex justify-between items-center">
-                                <span class="text-lg font-bold">'. $row["price"] .' $</span>
+                                <span class="text-lg font-bold">' . $row["price"] . ' $</span>
                                 <button class="px-4 py-2 bg-yellow-400 text-green-900 rounded-full font-bold hover:bg-yellow-300">Kosárba</button>
                             </div>
                         </div>';
@@ -442,47 +450,47 @@
         });
 
         const sidebar = document.getElementById('sidebar');
-const overlay = document.getElementById('overlay');
-const hamburger = document.querySelector('.mobile-menu');
-const closeBtn = document.getElementById('close-sidebar');
+        const overlay = document.getElementById('overlay');
+        const hamburger = document.querySelector('.mobile-menu');
+        const closeBtn = document.getElementById('close-sidebar');
 
-// Open sidebar
-hamburger.addEventListener('click', () => {
-    sidebar.classList.remove('translate-x-full'); // remove hidden transform
-    overlay.classList.remove('hidden');
-});
+        // Open sidebar
+        hamburger.addEventListener('click', () => {
+            sidebar.classList.remove('translate-x-full'); // remove hidden transform
+            overlay.classList.remove('hidden');
+        });
 
-// Close sidebar
-closeBtn.addEventListener('click', () => {
-    sidebar.classList.add('translate-x-full');
-    overlay.classList.add('hidden');
-});
+        // Close sidebar
+        closeBtn.addEventListener('click', () => {
+            sidebar.classList.add('translate-x-full');
+            overlay.classList.add('hidden');
+        });
 
-// Close sidebar when clicking outside
-overlay.addEventListener('click', () => {
-    sidebar.classList.add('translate-x-full');
-    overlay.classList.add('hidden');
-});
+        // Close sidebar when clicking outside
+        overlay.addEventListener('click', () => {
+            sidebar.classList.add('translate-x-full');
+            overlay.classList.add('hidden');
+        });
 
 
 
-// Lock scrolling while preloader is visible
-document.body.classList.add('overflow-hidden');
+        // Lock scrolling while preloader is visible
+        document.body.classList.add('overflow-hidden');
 
-// Preloader hide after page load with delay
-window.addEventListener('load', () => {
-    const preloader = document.getElementById('preloader');
+        // Preloader hide after page load with delay
+        window.addEventListener('load', () => {
+            const preloader = document.getElementById('preloader');
 
-    setTimeout(() => {
-        preloader.classList.add('opacity-0', 'pointer-events-none');
-        // Unlock scrolling
-        document.body.classList.remove('overflow-hidden');
+            setTimeout(() => {
+                preloader.classList.add('opacity-0', 'pointer-events-none');
+                // Unlock scrolling
+                document.body.classList.remove('overflow-hidden');
 
-        setTimeout(() => preloader.style.display = 'none', 500);
-    }, 2000); // wait 3 seconds before hiding
-});
-
+                setTimeout(() => preloader.style.display = 'none', 500);
+            }, 2000); // wait 3 seconds before hiding
+        });
     </script>
 
 </body>
+
 </html>

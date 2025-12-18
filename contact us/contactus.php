@@ -20,9 +20,9 @@
                 <li><a href="../home/main.php#about">Rólunk</a></li>
                 <li><a href=" ../../galeria/gal.php">Galéria</a></li>
                 <li><a href="#contact">Kapcsolat</a></li>
-                <li><a id="login" href=" ../../galeria/gal.php">Bejelentkezés</a></li>
-                <li><a id="signup" href="#contact">Regisztráció</a></li>
-                <li><a href="#shop" class="nav-cta">Ajándékbolt</a></li>
+                <li><a id="login" href="/forms/Login.php">Bejelentkezés</a></li>
+                <li><a id="signup" href="/forms/Signup.php">Regisztráció</a></li>
+                <li><a href="/webshop/shop.php" class="nav-cta">Ajándékbolt</a></li>
             </ul>
             <div class="mobile-menu">
                 <span></span>

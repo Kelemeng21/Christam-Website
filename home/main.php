@@ -57,7 +57,7 @@
                 <li><a href="../../contact us/contactus.php">Kapcsolat</a></li>
                 <li><a id="login" href="../forms/Login.php" class="px-4 py-2 rounded-full bg-red-600">Bejelentkezés</a></li>
                 <li><a id="signup" href="../forms/Signup.php" class="px-4 py-2 rounded-full bg-green-500">Regisztráció</a></li>
-                <li><a href="#shop" class="nav-cta px-6 py-2 rounded-full font-bold">Ajándékbolt</a></li>
+                <li><a href="../webshop/shop.php" class="nav-cta px-6 py-2 rounded-full font-bold">Ajándékbolt</a></li>
                 <li>
                     <a href="../cart/cart.php" class="flex items-center justify-center gap-3 text-white px-6 py-3 font-bold text-lgtransition-all">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

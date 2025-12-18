@@ -13,6 +13,51 @@ body {
     flex-direction: column;
 }
 
+/* Scrollbar for all elements */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2); /* dark transparent track */
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d4af37; /* gold highlighted color */
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.2); /* subtle border for contrast */
+}
+
+#sidebar{
+    z-index: 999;
+}
+
+/* Slow spin for the ornament */
+@keyframes spin-slow {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+    animation: spin-slow 5s linear infinite; /* slower spin */
+}
+
+/* Falling snow animation */
+@keyframes fall {
+    0% { transform: translateY(-10%) rotate(0deg); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+}
+.animate-fall {
+    animation: fall 10s linear infinite; /* slower snowfall */
+}
+
+/* Text selection highlight for all elements */
+::selection {
+    background-color: #d4af37; /* gold highlight */
+    color: #0d2818; /* dark green text for contrast */
+}
+
 /* Header */
 header {
     background: rgba(255, 255, 255, 0.1);

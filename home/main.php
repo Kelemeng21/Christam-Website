@@ -42,6 +42,28 @@
         
     </header>
 
+    <div class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1 news">
+  <div aria-hidden="true" class="absolute top-1/2 left-[max(-7rem,calc(50%-52rem))] -z-10 -translate-y-1/2 transform-gpu blur-2xl">
+    <div style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)" class="aspect-577/310 w-144.25 bg-linear-to-r from-[#ff80b5] to-[#9089fc] opacity-30"></div>
+  </div>
+  <div aria-hidden="true" class="absolute top-1/2 left-[max(45rem,calc(50%+8rem))] -z-10 -translate-y-1/2 transform-gpu blur-2xl">
+    <div style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)" class="aspect-577/310 w-144.25 bg-linear-to-r from-[#ff80b5] to-[#9089fc] opacity-30"></div>
+  </div>
+  <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+    <p class="text-sm/6 text-gray-900">
+      <strong class="font-semibold">GeneriCon 2023</strong><svg viewBox="0 0 2 2" aria-hidden="true" class="mx-2 inline size-0.5 fill-current"><circle r="1" cx="1" cy="1" /></svg>Join us in Denver from June 7 – 9 to see what’s coming next.
+    </p>
+    <a href="#" class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-xs hover:bg-gray-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Register now <span aria-hidden="true">&rarr;</span></a>
+  </div>
+  <div class="flex flex-1 justify-end">
+    <button type="button" class="-m-3 p-3 focus-visible:-outline-offset-4">
+      <span class="sr-only">Dismiss</span>
+      <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 text-gray-900">
+        <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+      </svg>
+    </button>
+  </div>
+</div>
 
     
     <!-- Hero Section -->
@@ -63,6 +85,94 @@
     <main id="main">
         <!-- Itt helyezhetitek el a saját tartalmatokat -->
     </main>
+
+
+  <!-- Features Section -->
+<section class="bg-gradient-to-b from-[#1a472a] via-[#0d2818] to-[#1a472a] py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    
+    <!-- Section Header -->
+    <div class="mx-auto max-w-2xl lg:text-center">
+      <h2 class="text-base/7 font-semibold text-[#d4af37]">Gyors Telepítés</h2>
+      <p class="mt-2 text-4xl font-semibold tracking-tight text-[#fde047] sm:text-5xl lg:text-balance">
+        Minden, amire szükséged van az alkalmazásod indításához
+      </p>
+      <p class="mt-6 text-lg/8 text-white/80">
+        Akár kis projektről, akár nagy alkalmazásról van szó, a telepítés gyors és biztonságos. Egyszerű, könnyen követhető folyamatok, amelyek biztosítják a gördülékeny indulást.
+      </p>
+    </div>
+
+    <!-- Features Grid -->
+    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+        
+        <!-- Feature 1 -->
+        <div class="relative pl-16">
+          <dt class="text-base/7 font-semibold text-[#fde047]">
+            <div class="absolute top-0 left-0 flex w-10 h-10 items-center justify-center rounded-lg bg-[#d4af37]">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-6 h-6 text-[#0d2818]">
+                <path d="M12 16.5V9.75m0 0 3 3m-3-3-3 3M6.75 19.5a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            Egyszerű telepítés
+          </dt>
+          <dd class="mt-2 text-base/7 text-white/80">
+            Kattints és telepítsd. Nincs szükség bonyolult konfigurációra. Az alkalmazásod percek alatt élesbe állítható.
+          </dd>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="relative pl-16">
+          <dt class="text-base/7 font-semibold text-[#fde047]">
+            <div class="absolute top-0 left-0 flex w-10 h-10 items-center justify-center rounded-lg bg-[#d4af37]">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-6 h-6 text-[#0d2818]">
+                <path d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            SSL tanúsítványok
+          </dt>
+          <dd class="mt-2 text-base/7 text-white/80">
+            Teljesen automatikus SSL tanúsítványok, hogy webalkalmazásod mindig biztonságos legyen.
+          </dd>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="relative pl-16">
+          <dt class="text-base/7 font-semibold text-[#fde047]">
+            <div class="absolute top-0 left-0 flex w-10 h-10 items-center justify-center rounded-lg bg-[#d4af37]">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-6 h-6 text-[#0d2818]">
+                <path d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            Egyszerű sorok
+          </dt>
+          <dd class="mt-2 text-base/7 text-white/80">
+            Könnyen kezelhető üzenetsorok és feldolgozási folyamatok a gördülékeny működésért.
+          </dd>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="relative pl-16">
+          <dt class="text-base/7 font-semibold text-[#fde047]">
+            <div class="absolute top-0 left-0 flex w-10 h-10 items-center justify-center rounded-lg bg-[#d4af37]">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-6 h-6 text-[#0d2818]">
+                <path d="M7.864 4.243A7.5 7.5 0 0 1 19.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 0 0 4.5 10.5a7.464 7.464 0 0 1-1.15 3.993m1.989 3.559A11.209 11.209 0 0 0 8.25 10.5a3.75 3.75 0 1 1 7.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 0 1-3.6 9.75m6.633-4.596a18.666 18.666 0 0 1-2.485 5.33" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            Fejlett biztonság
+          </dt>
+          <dd class="mt-2 text-base/7 text-white/80">
+            Tökéletesen védett alkalmazás, a legmodernebb biztonsági protokollokkal és titkosítással.
+          </dd>
+        </div>
+
+      </dl>
+    </div>
+  </div>
+</section>
+
+
+
 
 <!-- Statisztika Szekció -->
 <section class="bg-green-900 py-24 sm:py-32">

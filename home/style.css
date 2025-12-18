@@ -468,5 +468,11 @@ footer {
     color: #000;
   }
 
+  .news{
+    position: sticky;
+    top: 0px;
+    overflow: auto;
+  }
+
 
 

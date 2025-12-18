@@ -18,7 +18,7 @@
 
     <link rel="stylesheet" href="shop.css">
 
-    <title>Karácsonyi Üdvözlet</title>
+    <title>Bolt</title>
 </head>
 
 <body>

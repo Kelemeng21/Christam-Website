@@ -21,7 +21,7 @@
         bottom: 0;
     }
   </style>
-  <title>Christmas Sign In</title>
+  <title>Regisztráció</title>
 </head>
 <body class="bg-gradient-to-b from-[#1a472a] via-[#0d2818] to-[#1a472a] text-white min-h-screen flex items-center justify-center px-6 py-12">
 

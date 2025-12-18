@@ -92,6 +92,24 @@ nav {
     transition: 0.3s;
 }
 
+#login{
+    color: white !important;
+    padding: 0.7rem 1.5rem !important;
+    border-radius: 25px;
+    font-weight: bold;
+    border: none !important;
+    background-color: red;
+}
+
+#signup{
+    color: white !important;
+    padding: 0.7rem 1.5rem !important;
+    border-radius: 25px;
+    font-weight: bold;
+    border: none !important;
+    background-color: lightgreen;
+}
+
 /* Contact Section */
 .contact-hero {
     text-align: center;

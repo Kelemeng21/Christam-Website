@@ -26,7 +26,7 @@
         <nav>
             <div class="logo">
                 <span>🎄</span>
-                <span>Karácsony 2024</span>
+                <span>Karácsony</span>
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Főoldal</a></li>

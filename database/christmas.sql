@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2025. Dec 18. 12:03
+-- Létrehozás ideje: 2025. Dec 18. 12:17
 -- Kiszolgáló verziója: 10.4.32-MariaDB
 -- PHP verzió: 8.2.12
 
@@ -26,8 +26,7 @@ SET time_zone = "+00:00";
 --
 -- Tábla szerkezet ehhez a táblához `addresses`
 --
-
-CREATE DATABASE IF NOT EXISTS christmas;
+CREATE DATABASE IF NOT EXISTS  christmas;
 USE christmas;
 
 CREATE TABLE `addresses` (
@@ -59,7 +58,7 @@ CREATE TABLE `advent_rewards` (
   `day` int(11) NOT NULL,
   `product_id` int(11) NOT NULL,
   `discount_percentage` decimal(5,2) DEFAULT NULL
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -195,19 +194,19 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`product_id`, `name`, `description`, `price`, `stock_quantity`, `created_at`, `img`) VALUES
-(1, 'Christmas Tree', 'Beautiful 6ft artificial Christmas tree', 149.99, 50, '2025-12-18 07:30:26', NULL),
-(2, 'Santa Hat', 'Classic red and white Santa hat', 12.99, 200, '2025-12-18 07:30:26', NULL),
-(3, 'LED Lights', 'Multi-color LED Christmas lights', 29.99, 100, '2025-12-18 07:30:26', NULL),
-(4, 'Toy Train Set', 'Classic wooden toy train set', 89.99, 30, '2025-12-18 07:30:26', NULL),
-(5, 'Snowman Kit', 'Complete snowman building kit', 24.99, 75, '2025-12-18 07:30:26', NULL),
-(6, 'Arany Csillag Csúcsdísz', 'Ragyogó arany színű csillag a karácsonyfa tetejére.', 15.50, 45, '2025-12-18 10:32:15', NULL),
-(7, 'Adventi Gyertyaszett', '4 darabos klasszikus piros gyertya készlet adventi koszorúhoz.', 12.99, 80, '2025-12-18 10:32:15', NULL),
-(8, 'Kézzel Festett Üveggömb', 'Egyedi, kék-ezüst mintás üveggömb (6 darabos készlet).', 24.90, 25, '2025-12-18 10:32:15', NULL),
-(9, 'Karácsonyi Kötött Pulóver', 'Rénszarvas mintás, meleg gyapjú pulóver minden méretben.', 39.99, 35, '2025-12-18 10:32:15', NULL),
-(10, 'Műhó Spray', 'Könnyen lemosható dekorációs spray ablakokra és fákra.', 5.50, 150, '2025-12-18 10:32:15', NULL),
-(11, 'Diótörő Figura', '30 cm magas, hagyományos fából készült katona figura.', 29.00, 20, '2025-12-18 10:32:15', NULL),
-(12, 'Fényfüzér Kültéri', '10 méteres, jégcsap alakú hidegfehér LED sor.', 34.50, 60, '2025-12-18 10:32:15', NULL),
-(13, 'Illatosított Fahéj Rúd', 'Természetes dekoráció és illatosító csomag.', 8.99, 100, '2025-12-18 10:32:15', NULL);
+(1, 'Christmas Tree', 'Beautiful 6ft artificial Christmas tree', 149.99, 50, '2025-12-18 07:30:26', 'https://elle.hu/uploads/cover/a2FyYWNzb255ZmFmcmlzc3RpcHBlay1lbGxlLmh1_w1060_h727_ojpg.webp'),
+(2, 'Santa Hat', 'Classic red and white Santa hat', 12.99, 200, '2025-12-18 07:30:26', 'https://i.pepita.hu/images/product/11684574/univerzalis-mikulas-sapka-piros-feher-31-x-50-cm-40-g_91230705_1200x630.jpg'),
+(3, 'LED Lights', 'Multi-color LED Christmas lights', 29.99, 100, '2025-12-18 07:30:26', 'https://img.kokiskashop.hu/p/2/2047/1465229062-903315-big.jpg'),
+(4, 'Toy Train Set', 'Classic wooden toy train set', 89.99, 30, '2025-12-18 07:30:26', 'https://www.regiojatek.hu/data/regio_images/normal2/00611_0.jpg'),
+(5, 'Snowman Kit', 'Complete snowman building kit', 24.99, 75, '2025-12-18 07:30:26', 'https://www.bakerross.co.uk/media/catalog/product/f/x/fx867z-a.jpg'),
+(6, 'Arany Csillag Csúcsdísz', 'Ragyogó arany színű csillag a karácsonyfa tetejére.', 15.50, 45, '2025-12-18 10:32:15', 'https://a.allegroimg.com/original/1159a2/23d8b61a40f183ea2d8235447693/FA-EGOSOR-CSILLAG-DISZ-AZUROWA-ARANY-dekoracio-KARACSONYFA-DISZ'),
+(7, 'Adventi Gyertyaszett', '4 darabos klasszikus piros gyertya készlet adventi koszorúhoz.', 12.99, 80, '2025-12-18 10:32:15', 'https://cdnbeta.imageserver.cz/packway/product/zoom/10/4812/2405968.jpg'),
+(8, 'Üveggömb', 'Egyedi, kék-ezüst mintás üveggömb (6 darabos készlet).', 24.90, 25, '2025-12-18 10:32:15', 'https://www.firstdecor.hu/img/80191/ARB101500/ARB101500.jpg'),
+(9, 'Karácsonyi Kötött Pulóver', 'Rénszarvas mintás, meleg gyapjú pulóver minden méretben.', 39.99, 35, '2025-12-18 10:32:15', 'https://webshop.mlsz.hu/userfiles/8/c/8c0057eef4f427f52060043356318f98.jpg'),
+(10, 'Műhó Spray', 'Könnyen lemosható dekorációs spray ablakokra és fákra.', 5.50, 150, '2025-12-18 10:32:15', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTQNxxF__SGS7KvE9EE63h3OpiUaTu8y9k8g&s'),
+(11, 'Diótörő Figura', '30 cm magas, hagyományos fából készült katona figura.', 29.00, 20, '2025-12-18 10:32:15', 'https://ajandekotveszek.hu/wp-content/uploads/2022/11/dd59937-2-scaled.jpg'),
+(12, 'Fényfüzér Kültéri', '10 méteres, jégcsap alakú hidegfehér LED sor.', 34.50, 60, '2025-12-18 10:32:15', 'https://piktor.hu/images/termek_kepek/Kert/Kerti-dekor/SAL-fenyfuggony-KAF-600L-melegfeher.jpg'),
+(13, 'Illatosított Fahéj Rúd', 'Természetes dekoráció és illatosító csomag.', 8.99, 100, '2025-12-18 10:32:15', 'https://www.chiliszoszok.hu/img/7378/142544_altpic_1/142544.jpg?time=1672675577');
 
 -- --------------------------------------------------------
 
@@ -268,7 +267,7 @@ CREATE TABLE `reviews` (
   `rating` int(11) NOT NULL,
   `comment` text DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 

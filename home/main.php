@@ -14,6 +14,11 @@
     <!-- Flowbite JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.5/flowbite.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<script src="./main.js" defer></script>
     <title>Karácsonyi Üdvözlet</title>
 </head>
 
@@ -261,7 +266,7 @@
                         "Nagyszerű felhasználói élmény! A Flowbite előre elkészített komponensei időt és energiát spórolnak meg, miközben gyönyörű karácsonyi dizájnt készíthetsz."
                     </blockquote>
                     <figcaption class="flex items-center gap-4 mt-auto">
-                        <img class="w-14 h-14 rounded-full ring-2 ring-yellow-400" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jane-doe.png" alt="Jane Doe">
+                        <img class="w-14 h-14 rounded-full ring-2 ring-yellow-400" src="https://t4.ftcdn.net/jpg/11/36/66/67/360_F_1136666779_WKr6f2Mx6i7X8zbhB0iul0qBdInCjWtq.jpg" alt="Jane Doe">
                         <div class="text-left">
                             <div class="text-yellow-400 font-semibold">Jane Doe</div>
                             <div class="text-green-200 text-sm font-light">Marketing Lead at Flowbite</div>
@@ -430,6 +435,8 @@
 
     <!-- Scripts -->
     <script>
+
+        
         let offset = 6; // initial number of products shown
         const limit = 6;
 
@@ -489,7 +496,11 @@
                 setTimeout(() => preloader.style.display = 'none', 500);
             }, 2000); // wait 3 seconds before hiding
         });
+
+
     </script>
+
+
 
 </body>
 

@@ -13,7 +13,7 @@
       margin: 0 auto;
     }
   </style>
-  <title>Christmas Sign In</title>
+  <title>Christmas Log In</title>
 </head>
 <body class="bg-gradient-to-b from-[#1a472a] via-[#0d2818] to-[#1a472a] text-white min-h-screen flex items-center justify-center px-6 py-12">
 
@@ -21,7 +21,7 @@
     
     <!-- Left Side Content -->
     <div class="lg:w-1/2 hidden lg:flex flex-col justify-center items-center bg-green-800 p-10">
-      <img src="https://img.pikbest.com/origin/09/42/10/57bpIkbEsTHUh.png!sw800" alt="Christmas Illustration" class="logo-img mb-6" />
+      <img src="https://images.seeklogo.com/logo-png/42/2/merry-christmas-logo-png_seeklogo-426633.png" alt="Christmas Illustration" class="logo-img mb-6" />
       <h2 class="text-3xl font-bold text-yellow-400 mb-4 text-center">Welcome to Your Christmas Dashboard</h2>
       <p class="text-white/80 text-center">
         Celebrate this festive season with joy, gifts, and surprises! Sign in to access your personalized Christmas experience.
@@ -31,7 +31,7 @@
     <!-- Right Side Form -->
     <div class="lg:w-1/2 w-full p-8 sm:p-12">
       <div class="text-center mb-8">
-        <h2 class="text-2xl font-bold tracking-tight text-yellow-400">Sign in to Your Christmas Account</h2>
+        <h2 class="text-2xl font-bold tracking-tight text-yellow-400">Log in to Your Christmas Account</h2>
         <p class="mt-2 text-sm text-white/80">Celebrate the season with your festive dashboard</p>
       </div>
 
@@ -61,7 +61,7 @@
 
         <button type="submit"
           class="w-full rounded-md bg-yellow-400 px-3 py-2 text-green-900 font-semibold hover:bg-yellow-300 focus:ring-2 focus:ring-yellow-500 transition">
-          Sign In
+          Log In
         </button>
       </form>
 

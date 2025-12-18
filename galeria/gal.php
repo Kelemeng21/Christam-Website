@@ -19,6 +19,8 @@
                 <li><a href="../../home/main.php#about">Rólunk</a></li>
                 <li><a href="#" class="active">Galéria</a></li>
                 <li><a href="../../contact us/contactus.php">Kapcsolat</a></li>
+                <li><a id="login" href=" ../../galeria/gal.php">Bejelentkezés</a></li>
+                <li><a id="signup" href="#contact">Regisztráció</a></li>
                 <li><a href="#shop" class="nav-cta">Ajándékbolt</a></li>
             </ul>
             <div class="mobile-menu">

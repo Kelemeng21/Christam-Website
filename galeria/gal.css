@@ -122,7 +122,7 @@ nav {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3 , 1fr);    
     gap: 2rem;
 }
 
@@ -130,11 +130,12 @@ nav {
     position: relative;
     overflow: hidden;
     border-radius: 15px;
-    aspect-ratio: 1 / 1;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(212, 175, 55, 0.2);
     cursor: pointer;
     transition: all 0.3s;
+    width: 300px;
+    height: 200px;
 }
 
 .gallery-item:hover {

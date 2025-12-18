@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2025. Dec 18. 08:40
+-- Létrehozás ideje: 2025. Dec 18. 12:03
 -- Kiszolgáló verziója: 10.4.32-MariaDB
 -- PHP verzió: 8.2.12
 
@@ -26,6 +26,9 @@ SET time_zone = "+00:00";
 --
 -- Tábla szerkezet ehhez a táblához `addresses`
 --
+
+CREATE DATABASE IF NOT EXISTS christmas;
+USE christmas;
 
 CREATE TABLE `addresses` (
   `address_id` int(11) NOT NULL,
@@ -183,19 +186,28 @@ CREATE TABLE `products` (
   `description` text DEFAULT NULL,
   `price` decimal(10,2) NOT NULL,
   `stock_quantity` int(11) DEFAULT 0,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `img` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- A tábla adatainak kiíratása `products`
 --
 
-INSERT INTO `products` (`product_id`, `name`, `description`, `price`, `stock_quantity`, `created_at`) VALUES
-(1, 'Christmas Tree', 'Beautiful 6ft artificial Christmas tree', 149.99, 50, '2025-12-18 07:30:26'),
-(2, 'Santa Hat', 'Classic red and white Santa hat', 12.99, 200, '2025-12-18 07:30:26'),
-(3, 'LED Lights', 'Multi-color LED Christmas lights', 29.99, 100, '2025-12-18 07:30:26'),
-(4, 'Toy Train Set', 'Classic wooden toy train set', 89.99, 30, '2025-12-18 07:30:26'),
-(5, 'Snowman Kit', 'Complete snowman building kit', 24.99, 75, '2025-12-18 07:30:26');
+INSERT INTO `products` (`product_id`, `name`, `description`, `price`, `stock_quantity`, `created_at`, `img`) VALUES
+(1, 'Christmas Tree', 'Beautiful 6ft artificial Christmas tree', 149.99, 50, '2025-12-18 07:30:26', NULL),
+(2, 'Santa Hat', 'Classic red and white Santa hat', 12.99, 200, '2025-12-18 07:30:26', NULL),
+(3, 'LED Lights', 'Multi-color LED Christmas lights', 29.99, 100, '2025-12-18 07:30:26', NULL),
+(4, 'Toy Train Set', 'Classic wooden toy train set', 89.99, 30, '2025-12-18 07:30:26', NULL),
+(5, 'Snowman Kit', 'Complete snowman building kit', 24.99, 75, '2025-12-18 07:30:26', NULL),
+(6, 'Arany Csillag Csúcsdísz', 'Ragyogó arany színű csillag a karácsonyfa tetejére.', 15.50, 45, '2025-12-18 10:32:15', NULL),
+(7, 'Adventi Gyertyaszett', '4 darabos klasszikus piros gyertya készlet adventi koszorúhoz.', 12.99, 80, '2025-12-18 10:32:15', NULL),
+(8, 'Kézzel Festett Üveggömb', 'Egyedi, kék-ezüst mintás üveggömb (6 darabos készlet).', 24.90, 25, '2025-12-18 10:32:15', NULL),
+(9, 'Karácsonyi Kötött Pulóver', 'Rénszarvas mintás, meleg gyapjú pulóver minden méretben.', 39.99, 35, '2025-12-18 10:32:15', NULL),
+(10, 'Műhó Spray', 'Könnyen lemosható dekorációs spray ablakokra és fákra.', 5.50, 150, '2025-12-18 10:32:15', NULL),
+(11, 'Diótörő Figura', '30 cm magas, hagyományos fából készült katona figura.', 29.00, 20, '2025-12-18 10:32:15', NULL),
+(12, 'Fényfüzér Kültéri', '10 méteres, jégcsap alakú hidegfehér LED sor.', 34.50, 60, '2025-12-18 10:32:15', NULL),
+(13, 'Illatosított Fahéj Rúd', 'Természetes dekoráció és illatosító csomag.', 8.99, 100, '2025-12-18 10:32:15', NULL);
 
 -- --------------------------------------------------------
 
@@ -489,7 +501,7 @@ ALTER TABLE `payments`
 -- AUTO_INCREMENT a táblához `products`
 --
 ALTER TABLE `products`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT a táblához `product_images`

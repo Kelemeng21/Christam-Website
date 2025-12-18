@@ -43,41 +43,49 @@
                 <span></span>
             </div>
         </nav>
-
     </header>
 
     <main>
         <section class="productgrid">
-            <article class="productcard">
-                <span class="badge">🎄 Christmas</span>
+            <?php
+            include '../db.php'; // Update the path to your DB connection file
 
-                <div class="img-wrap">
-                    <img src="https://picsum.photos/500/400" alt="Product">
-                </div>
+            // Fetch products from database
+            $sql = "SELECT * FROM products ORDER BY product_id ASC";
+            $result = $conn->query($sql);
 
-                <div class="content">
-                    <h2 class="productname">Golden Candle</h2>
+            if ($result->num_rows > 0) {
+                while($row = $result->fetch_assoc()) {
+                    echo '
+                    <article class="productcard">
+                        <span class="badge">🎄 Christmas</span>
 
-                    <div class="rating">
-                        ⭐⭐⭐⭐☆ <span>(4.2)</span>
-                    </div>
+                        <div class="img-wrap">
+                            <img src="'. $row["img"] .'" alt="'. htmlspecialchars($row["name"]) .'">
+                        </div>
 
-                    <p class="description">
-                        Premium handmade karácsonyi gyertya, meleg fahéj és narancs illattal.
-                    </p>
-                </div>
+                        <div class="content">
+                            <h2 class="productname">'. htmlspecialchars($row["name"]) .'</h2>
 
-                <div class="footer">
-                    <span class="price">
-                        <span class="amount">45</span>
-                        <span class="currency">$</span>
-                    </span>
-                    <button class="buy-btn">Kosárba</button>
-                </div>
-            </article>
-            <div class="productcard"></div>
-            <div class="productcard"></div>
-            <div class="productcard"></div>
+                            <p class="description">
+                                '. htmlspecialchars($row["description"]) .'
+                            </p>
+                        </div>
+
+                        <div class="footer">
+                            <span class="price">
+                                <span class="amount">'. $row["price"] .'</span>
+                                <span class="currency">$</span>
+                            </span>
+                            <button class="buy-btn">Kosárba</button>
+                        </div>
+                    </article>
+                    ';
+                }
+            } else {
+                echo '<p class="text-white text-center col-span-3">Nincs elérhető termék.</p>';
+            }
+            ?>
         </section>
     </main>
 
@@ -110,12 +118,11 @@
                 <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true"
                     class="size-5 text-gray-900">
                     <path
-                        d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+                        d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 0 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
                 </svg>
             </button>
         </div>
     </div>
-
 
     <footer>
         <div class="footer-content">
@@ -143,8 +150,6 @@
                         <li><a href="#events">Események</a></li>
                     </ul>
                 </div>
-
-
 
                 <div class="footer-section">
                     <h3>Segítség</h3>
@@ -180,3 +185,4 @@
         </div>
     </footer>
 </body>
+</html>

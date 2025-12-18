@@ -17,9 +17,8 @@
             <ul class="nav-links">
                 <li><a href="#home">Főoldal</a></li>
                 <li><a href="#about">Rólunk</a></li>
-                <li><a href="#services">Szolgáltatások</a></li>
-                <li><a href="#gallery">Galéria</a></li>
-                <li><a href="#contact">Kapcsolat</a></li>
+                <li><a href="../../galeria/gal.php">Galéria</a></li>
+                <li><a href="../contact us/contactus.php">Kapcsolat</a></li>
                 <li><a href="#shop" class="nav-cta">Ajándékbolt</a></li>
             </ul>
             <div class="mobile-menu">
